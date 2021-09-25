@@ -14,7 +14,7 @@
         <div id="content" role="main">
           <!-- TODO: Content goes here -->
           <header>
-            <div><img src="logo.png" alt="EPAM logo"></div>
+            <div><img src="logo.png" alt="logo"></div>
             <section>
               <h1><b>HTML Elements</b></h1>
             </section>
@@ -37,29 +37,29 @@
             <h4>Header 4</h4>
             <h5>Header 5</h5>
             <h6>Header 6</h6>
-          </section>
           <hr>
-          <section>
-            <p>Lorem ipsum dolor sit amet, <a href="">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. 
-              Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. 
-              Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. 
-              <cite>The New York Times</cite> (That&#x27s a citation).<u>Underline</u>. Maecenas ornare tortor. 
-              Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. 
-              Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-            <p><abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. 
-              Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. 
-              Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. 
-              To copy a file type <kbd>COPY</kbd> <em>filename</em>. <del>Dinner`s at 5:00.</del> <ins>Let&#x27s make that 7.
-              </ins> This <del>text</del> has been struck.</p>
+          <p>Lorem ipsum dolor sit amet, <a href="">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. 
+            Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. 
+            Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. 
+            <cite>The New York Times</cite> (That&#x27;s a citation).<u>Underline</u>. Maecenas ornare tortor. 
+            Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. 
+            Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+          <p><abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are our tools. Mauris a ante. 
+            Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. 
+            Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. 
+            To copy a file type <kbd>COPY</kbd> <em>filename</em>. <del>Dinner`s at 5:00.</del> <ins>Let&#x27;s make that 7.
+            </ins> This <del>text</del> has been struck.</p>
           </section>
           <hr>
           <section id="table">
             <h2>Table</h2>
             <table>
               <thead>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
+                <tr>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
               </thead>
               <tbody>
                 <tr>
@@ -84,19 +84,21 @@
             <h2>Unordered List</h2>
             <ul>
               <li>List item 1</li>
-              <li>List item 2</li>
+              <li>List item 2
                 <ul>
                   <li>Some nested list item 1</li>
                 </ul>
+              </li>
               <li>List item 3</li>
             </ul>
             <h2>Ordered List</h2>
             <ol type="1">
               <li>List item 1</li>
-              <li>List item 2</li>
-              <ol type="A">
-                <li>Some nested list item 1</li>
-              </ol>
+              <li>List item 2
+                <ol type="A">
+                  <li>Some nested list item 1</li>
+                </ol>
+              </li>
               <li>List item 3</li>
             </ol>
             <h3>Definition List</h3>
@@ -106,15 +108,15 @@
               <dt>defines terms 2</dt>
               <dd>description  2</dd>
             </dl>
-            <label for="">Details</label>
-            <select>
+            <label for="details">Details</label>
+            <select id="details">
               <option value="HTML">HTML</option>
               <option value="CSS">CSS</option>
               <option value="JS">JS</option>
             </select>
           </section>
           <hr>
-          <section>
+          <section id="text-formats">
             <h2>Text formats</h2>
             <h3>Article Text</h3>
             <article>
@@ -137,29 +139,31 @@ both           spaces and
   vertical-align: middle;
   justify-content: center;
 }
-              </pre>
+            </pre>
+          </section>
+          <section id="blockquotes">
             <h2>Blockquotes</h2>
-            <p>Let&#x27s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+            <p>Let&#x27;s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
               <blockquote>
                 "If you go back a few hundred years, 
                   what we take for granted today would seem like magic-being able to talk to people over long distances, 
                   to transmit images, flying, accessing vast amounts of data like an oracle. 
                   These are all things that would have been considered magic a few hundred years ago."<br>
-                <a href="http://usless.com">Elon Musk</a>
+                <a href="some-URI">Elon Musk</a>
               </blockquote>
           </section>
           <hr>
-          <section>
-            <form action="">
+          <div>
+            <form action="some-action">
               First name: <input type="text"><br>
               Surname: <input type="text"><br>
               Email: <input type="email"><br>
-              <textarea name="" id="" cols="30" rows="10"></textarea><br>
+              <textarea name="textarea" cols="30" rows="10"></textarea><br>
               <button type="submit">Submit</button>
             </form>
-          </section>
+          </div>
           <footer>
-            &copy Copyright Epam Systems
+            &copy; Copyright Epam Systems
           </footer>   
         </div>
       </div>
